@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedReminder+</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+        
+      font-family: Arial, sans-serif;
+      background-color: #181717;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 10px;
+    }
+
+    header {
+      background-color: #181717;
+      color: #fff;
+      padding: 5px 5px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+        display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    #hero {
+       background-image: url('back_img.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 23px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+      color: #fff;
+    }
+
+    #features {
+      padding: 40px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    #features h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .feature {
+      display: inline-block;
+      width: calc(33.33% - 40px);
+      margin: 0 20px;
+      vertical-align: top;
+      text-align: left;
+      color: #fff;
+    }
+
+    .feature img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .feature {
+        width: calc(50% - 40px);
+        margin: 0 20px 40px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      #hero {
+        padding: 80px 0;
+      }
+
+      #hero h1 {
+        font-size: 28px;
+      }
+
+      #hero p {
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+
+      .feature {
+        width: calc(100% - 40px);
+        margin: 0 20px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MedReminder+</h1>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="medical_scheduler.html">Medical Schedule</a></li>
+        <li><a href="reminder_alerts.html">Reminder Alerts</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h1>Never Miss a Dose Again</h1>
+        <p>Manage your medication schedule with ease and stay healthy.</p>
+        <a href="register.html" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="feature">
+          <img src="drugs.png" alt="Pill Icon">
+          <h3>Medication Schedule</h3>
+          <p>Create and manage your medication schedule with ease.</p>
+        </div>
+        <div class="feature">
+          <img src="table-clock.png" alt="Alarm Icon">
+          <h3>Reminder Alerts</h3>
+          <p>Receive timely reminders to take your medications.</p>
+        </div>
+        <div class="feature">
+          <img src="medical-history.png" alt="History Icon">
+          <h3>Medication History</h3>
+          <p>Track your medication history for better management.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+<script src="scripts.js"></script>
+  <footer>
+    <div class="container">
+      <p>Contact Us: faithgitau@gmail.com /smartmeds@twitter.com</p>
+

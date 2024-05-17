@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Scheduler - MedReminder+</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('med.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #accbec;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #0056b3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+#scheduler {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#scheduler h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #0b0d10;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #0d0f12;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .dropbtn {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    left: 0;
+    right: 0;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="time"] {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Medication Scheduler</h1>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="medical_history.html">History</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="scheduler">
+      <div class="container">
+        <h2>Schedule Your Medication</h2>
+        <form id="medication-form">
+          <label for="medication-name">Medication Name:</label>
+          <input type="text" id="medication-name" name="medication-name" required>
+
+          <label for="medication-time">Time:</label>
+          <input type="time" id="medication-time" name="medication-time" required>
+
+          <label for="medication-dosage">Dosage:</label>
+          <input type="text" id="medication-dosage" name="medication-dosage" required>
+
+          <button type="submit" class="btn">Add Medication</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Contact Us: faithgitau@gmail.com /smartmeds@twitter.com</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
